@@ -1,38 +1,45 @@
-.App {
-  text-align: center;
+/*
+Rood #dd3038;
+Oranje #e7613a;
+Licht oranje #FDF4F2;
+Zwart #292929 (voor standaard tekst);
+Wit #FFFFFF;
+ */
+
+@import url('https://fonts.googleapis.com/css2?family=Gochi+Hand&family=Quicksand&family=Roboto+Condensed:wght@300&display=swap');
+
+:root {
+    --primary: #ededed;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.outer-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.inner-container {
+    flex-basis: 1200px;
+    flex-grow: 0;
+    flex-shrink: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.App-link {
-  color: #61dafb;
+body {
+    font-family: 'Roboto Condensed', sans-serif;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+h1,h2 {
+    font-family: 'Quicksand', sans-serif;
 }
+
